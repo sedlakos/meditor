@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export class TextBlock extends React.Component {
+export class TextField extends React.Component {
 
     constructor(props) {
         super(props);
@@ -35,6 +35,6 @@ export class TextBlock extends React.Component {
             onBlur={this.emitChange}
             ref={this.ref}
             contentEditable
-            dangerouslySetInnerHTML={{__html: this.props.html}}></TAG>;
+            dangerouslySetInnerHTML={{__html: this.props.html}}/>;
     }
 }
