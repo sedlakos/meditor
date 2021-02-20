@@ -37,7 +37,6 @@ class EditorRow extends React.Component {
     };
 
     render() {
-        console.log(this.props)
         return <>
             <StyledBlock ref={this.wrapperRef} onClick={this.restoreFocus} selected={this.state.selected}>
                 {/*<Provider inject={[new RowContainer(this.props)]}>*/}

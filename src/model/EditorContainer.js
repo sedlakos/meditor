@@ -17,15 +17,47 @@ export class EditorContainer extends Container {
                     new CmdDomExec('italic', 'fa fa-italic'),
                 ],
             },
-            // {
-            //     key: 'container',
-            //     field: 'container',
-            //     actions: [
-            //         new CmdDefault('remove', 'fa fa-trash'),
-            //         new CmdDomExec('bold', 'fa fa-bold'),
-            //         new CmdDomExec('italic', 'fa fa-italic'),
-            //     ],
-            // },
+            {
+                key: 'container',
+                field: 'container',
+                actions: [
+                    new CmdDefault('remove', 'fa fa-trash'),
+                    new CmdDomExec('bold', 'fa fa-bold'),
+                    new CmdDomExec('italic', 'fa fa-italic'),
+                ],
+                rows: [
+                    {
+                        items: [{
+                            key: 'heading1',
+                            field: 'text',
+                            tag: 'p',
+                            placeholder: 'This is my Awesome Column',
+                            html: 'This is my Awesome Column',
+                            actions: [
+                                new CmdDefault('remove', 'fa fa-trash'),
+                                new CmdDomExec('bold', 'fa fa-bold'),
+                                new CmdDomExec('italic', 'fa fa-italic'),
+                            ],
+                        },]
+                    },
+                    {
+                        items: [
+                            {
+                                key: 'heading1',
+                                field: 'text',
+                                tag: 'p',
+                                placeholder: 'This is my Awesome Column',
+                                html: 'This is my Awesome Column',
+                                actions: [
+                                    new CmdDefault('remove', 'fa fa-trash'),
+                                    new CmdDomExec('bold', 'fa fa-bold'),
+                                    new CmdDomExec('italic', 'fa fa-italic'),
+                                ],
+                            },
+                        ]
+                    },
+                ]
+            },
             {
                 key: 'paragraph',
                 field: 'text',
@@ -53,6 +85,7 @@ export class EditorContainer extends Container {
         let blocks = this.state.blocks
 
     }
-    swap = (idx1, idx2) => {}
+    swap = (idx1, idx2) => {
+    }
 
 }

@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Registry} from "react-registry";
+import EditorRow from "../editor/EditorRow";
 
 export class ContainerField extends React.Component {
 
@@ -10,20 +11,19 @@ export class ContainerField extends React.Component {
         this.ref = React.createRef()
     }
 
-    onChange = (e) => this.setState({html: e.target.value})
-    onFocus = () => this.props.onFieldUpdate({selected: true})
-
-
     render() {
         return <div className={'row'}>
-            <div className={'col-6'}>
-                this is col 1
-            </div>
-            <div className={'col-6'}>
-                this is col 2
-            </div>
+            {this.props.rows.map((row) => {
+                return <div className={'col-6'}>
+                    {row.items.map((item) => {
+                        return <>
+                            <EditorRow {...item} />
+                        </>
+                    })}
+                </div>
+            })}
         </div>
     }
 }
 
-Registry.register(ContainerField,{id: 'container', registry: 'fields'})
+Registry.register(ContainerField, {id: 'container', registry: 'fields'})
