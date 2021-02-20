@@ -1,37 +1,17 @@
 import './App.css';
 import {Editor} from "./components/editor/Editor";
+import {Provider} from "unstated";
+import {EditorContainer} from "./model/EditorContainer";
+import {ContainerField} from "./components/fields/ContainerField";
 
 
 function App() {
+    let editorContainer = new EditorContainer();
     return (
         <div className="App">
-            <Editor blocks={[
-                {
-                    name: 'Heading1',
-                    key: 'heading1',
-                    type: 'text',
-                    tag: 'h1',
-                    placeholder: 'This is my Awesome Editor',
-                    actions: [],
-                },
-                {
-                    name: 'Paragraph',
-                    key: 'paragraph',
-                    type: 'text',
-                    tag: 'p',
-                    placeholder: 'Start writing',
-                    actions: ['bold'],
-                },
-                {
-                    name: 'Paragraph',
-                    key: 'paragraph',
-                    type: 'text',
-                    tag: 'p',
-                    placeholder: 'Start writing',
-                    actions: ['bold', 'italic'],
-                }
-            ]
-            }/>
+            <Provider inject={[editorContainer]}>
+                <Editor/>
+            </Provider>
         </div>
     );
 }

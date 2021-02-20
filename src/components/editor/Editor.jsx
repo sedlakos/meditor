@@ -1,8 +1,8 @@
 import * as React from "react";
-import {TextField} from "../fields/TextField";
-import {AddRowDivider} from "../ui/AddRowDivider";
 import styled from "styled-components";
-import {InlineToolbar} from "./InlineToolbar";
+import EditorRow from "./EditorRow";
+import {Subscribe} from "unstated";
+import {EditorContainer} from "../../model/EditorContainer";
 
 const StyledBlock = styled.div`
     position: relative;
@@ -11,21 +11,28 @@ const StyledBlock = styled.div`
 export class Editor extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {selected: 2}
+        this.state = {
+            blocks: props.blocks
+        }
+    }
+
+    getFieldRemoveHandler = (index) => {
+        return () => {
+            this.setState({
+                blocks: this.state.blocks.filter((itm, idx) => index !== idx)
+            })
+        }
     }
 
     render() {
-        return <>
-            {this.props.blocks.map((block, idx) => {
-                return <>
-                    <StyledBlock key={idx}>
-                        {this.state.selected === idx &&
-                        <InlineToolbar actions={['remove', 'up', 'down', ...block.actions]}/>}
-                        <TextField html={block.placeholder} tag={block.tag}/>
-                    </StyledBlock>
-                    <AddRowDivider/>
-                </>
-            })}
-        </>;
+        return <Subscribe to={[EditorContainer]}>
+            {editor => (
+                editor.state.blocks.map((field, idx) => {
+                    return <EditorRow key={idx}
+                                      cmdRemove={this.getFieldRemoveHandler}
+                                      {...field}/>
+                })
+            )}
+        </Subscribe>;
     }
 }
