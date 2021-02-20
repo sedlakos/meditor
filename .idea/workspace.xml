@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="458f4bfb-79d8-434e-904e-91ab20996ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/editor/BlockActions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editor/EditorRow.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fields/ContainerField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/BlockContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CmdsManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/EditorContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/RowContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/fields/TextField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toolbox/CmdDefault.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toolbox/CmdDomExec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editor/Editor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editor/Editor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editor/InlineToolbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editor/InlineToolbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fields/TextField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fields/TextField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/fields/BaseField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/fields/BaseField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
