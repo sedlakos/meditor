@@ -20,6 +20,7 @@ export class EditorContainer extends Container {
             {
                 key: 'container',
                 field: 'container',
+                // TODO: how to draw container functions ?
                 actions: [
                     new CmdDefault('remove', 'fa fa-trash'),
                     new CmdDomExec('bold', 'fa fa-bold'),

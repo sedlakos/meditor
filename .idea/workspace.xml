@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="458f4bfb-79d8-434e-904e-91ab20996ca0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/registry/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/EditorActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/EditorReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editor/EditorRow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editor/EditorRow.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fields/ContainerField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fields/ContainerField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/EditorContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EditorContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
