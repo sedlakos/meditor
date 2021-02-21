@@ -16,20 +16,11 @@ export class Editor extends React.Component {
         }
     }
 
-    getFieldRemoveHandler = (index) => {
-        return () => {
-            this.setState({
-                blocks: this.state.blocks.filter((itm, idx) => index !== idx)
-            })
-        }
-    }
-
     render() {
         return <Subscribe to={[EditorContainer]}>
             {editor => (
-                editor.state.blocks.map((field, idx) => {
+                editor.state.items.map((field, idx) => {
                     return <EditorRow key={idx}
-                                      cmdRemove={this.getFieldRemoveHandler}
                                       {...field}/>
                 })
             )}

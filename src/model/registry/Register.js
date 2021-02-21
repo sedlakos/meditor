@@ -1,9 +1,12 @@
-class Register {
+export class Register {
     static map = {}
     static searchMap = []
 
-    static register = (key, label, component) => {
-        this.map[key] = component
+    static register = (key, label, component, props = {}) => {
+        this.map[key] = {
+            component,
+            props
+        }
         this.searchMap.push({key, label})
     }
 
@@ -12,8 +15,8 @@ class Register {
     }
 
     static searchKey = (search) => {
-        return this.searchMap.filter((itm) => {
-            return itm.startsWith(search)
+        return this.searchMap.filter(({label}) => {
+            return label.startsWith(search)
         })
     }
 }

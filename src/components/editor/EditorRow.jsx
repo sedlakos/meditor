@@ -37,19 +37,18 @@ class EditorRow extends React.Component {
     };
 
     render() {
+        console.log(this.props)
         return <>
             <StyledBlock ref={this.wrapperRef} onClick={this.restoreFocus} selected={this.state.selected}>
-                {/*<Provider inject={[new RowContainer(this.props)]}>*/}
-                {this.state.selected &&
-                <InlineToolbar
-                    actions={this.props.actions}/>}
-                <Registered id={this.props.field}
-                            registry={'fields'}
-                            onFieldUpdate={this.onUpdateField}
-                            onBlur={this.onBlur}
-                            {...this.props}
-                />
-                {/*</Provider>*/}
+                {/*{this.state.selected &&*/}
+                {/*<InlineToolbar*/}
+                {/*    actions={this.props.actions}/>}*/}
+                {/*<Registered id={this.props.field}*/}
+                {/*            registry={'fields'}*/}
+                {/*            onFieldUpdate={this.onUpdateField}*/}
+                {/*            onBlur={this.onBlur}*/}
+                {/*            {...this.props}*/}
+                {/*/>*/}
             </StyledBlock>
             <AddRowDivider/>
         </>;
